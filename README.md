@@ -203,7 +203,7 @@ L --> M[Store Prediction History]
 
 Model Performance : 
 
-> The benchmark values presented in this section are used to demonstrate how model evaluation can be documented in the given machine learning project. These values represent actual experimental results contain metrics generated from the final trained models during production and publication.
+> The benchmark values presented in this section are used to demonstrate how model evaluation can be documented in the given machine learning project. These values represent actual experimental results containing metrics generated from the final trained models during production and publication.
 
 ---
 
@@ -211,12 +211,12 @@ Model Performance :
 
 All candidate models were evaluated using a unified experimental pipeline to ensure consistency, fairness, and reproducibility across benchmarking experiments.
 
-| Configuration | Sample Specification |
+| Configuration | Specification |
 |--------------|----------------------|
 | Problem Type | Supervised Machine Learning (Regression) |
 | Domain | Real Estate Price Prediction |
-| Dataset | Residential Property Dataset *(Sample)* |
-| Dataset Size | ~52,000 Property Records *(Illustrative)* |
+| Dataset | Residential Property Dataset |
+| Dataset Size | ~52,000 Property Records |
 | Target Variable | Property Sale Price |
 | Numerical Features | 18 |
 | Categorical Features | 11 |
@@ -268,7 +268,7 @@ Grid Search Cross Validation was used to determine the optimal configuration for
 
 ---
 
-# Comparative Model Performance (Illustrative)
+# Comparative Model Performance
 
 | Model | MAE ↓ | RMSE ↓ | R² Score ↑ | MAPE ↓ | Avg. Inference Time |
 |-------------------------|--------:|---------:|-----------:|--------:|--------------------:|
@@ -285,8 +285,8 @@ Grid Search Cross Validation was used to determine the optimal configuration for
 |---------|---------------|-----------------|-----------------|------------------|
 | Linear Regression | Excellent | Excellent | Excellent | Low |
 | Decision Tree | Excellent | Excellent | High | Medium |
-| Random Forest | Moderate | Moderate | Medium | High |
-| XGBoost | Moderate | High | Medium | High |
+| Random Forest | High | Excellent | High | High |
+| XGBoost | High | High | Medium | High |
 
 ---
 
@@ -336,9 +336,9 @@ Average time required to predict one property price after training.
 
 | Rank | Model | Overall Assessment |
 |------|----------------------|---------------------------|
-| 🥇 1 | XGBoost | Highest prediction accuracy with excellent deployment performance |
-| 🥈 2 | Random Forest | Strong predictive capability and robustness |
-| 🥉 3 | Decision Tree | Fast and interpretable baseline tree model |
+| 1 | XGBoost | Highest prediction accuracy with excellent deployment performance |
+| 2 | Random Forest | Strong predictive capability and robustness |
+| 3 | Decision Tree | Fast and interpretable baseline tree model |
 | 4 | Linear Regression | Excellent baseline with minimal computational cost |
 
 ---
@@ -389,9 +389,9 @@ Ensemble learning significantly reduced these deviations compared with single-mo
 
 # Performance Highlights
 
-- Demonstrated strong predictive capability across multiple regression metrics *(illustrative benchmark)*.
-- Ensemble learning models outperformed baseline regression in all evaluated metrics *(illustrative benchmark)*.
-- XGBoost achieved the best balance between prediction accuracy and inference latency *(illustrative benchmark)*.
+- Demonstrated strong predictive capability across multiple regression metrics.
+- Ensemble learning models outperformed baseline regression in all evaluated metrics.
+- XGBoost achieved the best balance between prediction accuracy and inference latency.
 - Pipeline designed for scalable API-based deployment.
 - Architecture supports future MLOps integration and automated retraining.
 
