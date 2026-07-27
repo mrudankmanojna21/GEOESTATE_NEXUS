@@ -135,3 +135,47 @@ O --> C
 C --> A
 ```
 
+Machine Learning Pipeline :
+
+## Machine Learning Pipeline
+
+```mermaid
+flowchart LR
+
+A[Property Listings & Market Data] --> B[Data Validation]
+
+B --> C[Data Cleaning]
+
+C --> D[Feature Engineering]
+
+D --> E[Exploratory Data Analysis]
+
+E --> F[Feature Selection]
+
+F --> G[Train / Validation Split]
+
+G --> H[Model Training]
+
+H --> I[Linear Regression]
+
+H --> J[Random Forest]
+
+H --> K[XGBoost]
+
+I --> L[Hyperparameter Optimisation]
+J --> L
+K --> L
+
+L --> M[Model Evaluation]
+
+M --> N[Explainability & Feature Importance]
+
+N --> O[Prediction API]
+
+O --> P[Investment Intelligence Engine]
+
+P --> Q[Interactive Analytics Dashboard]
+
+Q --> R[Property Valuation & Decision Support]
+```
+
