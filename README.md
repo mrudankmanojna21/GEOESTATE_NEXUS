@@ -13,13 +13,21 @@ property recommendations for informed investment decisions.
 
 Features :
 •	 AI-powered property price prediction for purchase and rental properties. 
+
 •	 Future price appreciation and depreciation forecasting using historical market trends. 
+
 •	 Geospatial analysis based on location, infrastructure, and nearby amenities. 
+
 •	 Interactive market analytics dashboard with pricing trends and comparative insights. 
+
 •	 Locality comparison engine for evaluating multiple neighbourhoods. 
+
 •	 Investment recommendation system with ROI and growth potential analysis. 
+
 •	 Explainable AI to highlight the key factors influencing each prediction. 
+
 •	 RESTful APIs for seamless frontend-backend communication. 
+
 •	 Secure authentication and user-specific prediction history. 
 
 
