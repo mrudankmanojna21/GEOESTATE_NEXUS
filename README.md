@@ -12,6 +12,7 @@ indicators (metro, airport, commercial developments), perform comparative locali
 property recommendations for informed investment decisions. 
 
 Features :
+
 •	 AI-powered property price prediction for purchase and rental properties. 
 
 •	 Future price appreciation and depreciation forecasting using historical market trends. 
