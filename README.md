@@ -12,6 +12,7 @@ indicators (metro, airport, commercial developments), perform comparative locali
 property recommendations for informed investment decisions. 
 
 
+
 Features :
 
 •	 AI-powered property price prediction for purchase and rental properties. 
@@ -31,6 +32,7 @@ Features :
 •	 RESTful APIs for seamless frontend-backend communication. 
 
 •	 Secure authentication and user-specific prediction history. 
+
 
 
 System Architecture : 
