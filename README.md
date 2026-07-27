@@ -167,5 +167,39 @@ H --> I[REST API Deployment]
 
 I --> J[Interactive Analytics Dashboard]
 
+End to End Application Workflow : 
+
+## End-to-End Application Workflow
+
+```mermaid
+flowchart TD
+
+A[User Accesses GeoEstate Nexus]
+
+A --> B[Authenticate User]
+
+B --> C[Enter Property Details]
+
+C --> D[Validate & Preprocess Input]
+
+D --> E[Geospatial Intelligence Analysis]
+
+E --> F[Market Trend Analysis]
+
+F --> G[AI Prediction Engine]
+
+G --> H[Property Valuation]
+
+H --> I[Investment Strategy Analysis]
+
+I --> J[Generate Explainable Insights]
+
+J --> K[Interactive Analytics Dashboard]
+
+K --> L[Decision Support Report]
+
+L --> M[Store Prediction History]
+```
+
 J --> K[Property Valuation & Investment Insights]
 ```
