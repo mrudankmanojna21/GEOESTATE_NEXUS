@@ -139,6 +139,7 @@ Machine Learning Pipeline :
 
 ## Machine Learning Pipeline
 
+```mermaid
 flowchart TD
 
 A[Raw Property & Market Data] --> B[Data Cleaning & Validation]
@@ -154,6 +155,13 @@ E --> F[Hyperparameter Optimisation]
 F --> G[Model Evaluation]
 
 G --> H[Explainable AI & Feature Importance]
+
+H --> I[REST API Deployment]
+
+I --> J[Interactive Analytics Dashboard]
+
+J --> K[Property Valuation & Investment Insights]
+```
 
 H --> I[REST API Deployment]
 
