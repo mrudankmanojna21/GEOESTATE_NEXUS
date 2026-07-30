@@ -472,3 +472,273 @@ GeoEstate-Nexus/
 
 ---
 
+Code : 
+
+fastapi==0.118.0
+uvicorn==0.37.0
+pandas==2.3.2
+numpy==2.3.2
+scikit-learn==1.7.1
+xgboost==3.1.1
+joblib==1.5.2
+matplotlib==3.10.6
+plotly==6.3.0
+sqlalchemy==2.0.43
+psycopg2-binary==2.9.10
+python-dotenv==1.1.1
+pydantic==2.11.9
+requests==2.32.5
+googlemaps==4.10.0
+shap==0.49.1
+lime==0.2.0.1
+pytest==8.4.2
+
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+.env
+
+venv/
+.venv/
+
+.ipynb_checkpoints/
+
+*.csv
+*.xlsx
+
+models/*.pkl
+
+node_modules/
+
+build/
+dist/
+
+coverage/
+
+*.log
+
+.DS_Store
+
+.idea/
+.vscode/
+
+GeoEstate-Nexus
+│
+├── backend
+│
+├── frontend
+│
+├── datasets
+│
+├── notebooks
+│
+├── docs
+│
+├── docker
+│
+├── models
+│
+├── tests
+│
+├── images
+│
+├── requirements.txt
+│
+├── docker-compose.yml
+│
+├── Dockerfile
+│
+├── LICENSE
+│
+└── README.md
+
+FROM python:3.11
+
+WORKDIR /app
+
+COPY . .
+
+RUN pip install --no-cache-dir -r requirements.txt
+
+CMD ["uvicorn","backend.main:app","--host","0.0.0.0","--port","8000"]
+
+version: "3.9"
+
+services:
+
+  backend:
+
+    build: .
+
+    ports:
+
+      - "8000:8000"
+
+    depends_on:
+
+      - postgres
+
+  postgres:
+
+    image: postgres:15
+
+    environment:
+
+      POSTGRES_USER: postgres
+
+      POSTGRES_PASSWORD: password
+
+      POSTGRES_DB: geoestate
+
+    ports:
+
+      - "5432:5432"
+
+      from fastapi import FastAPI
+
+app = FastAPI(
+    title="GeoEstate Nexus API",
+    version="1.0.0",
+    description="AI Driven Property Analytics Platform"
+)
+
+@app.get("/")
+def root():
+    return {
+        "message":"GeoEstate Nexus API Running"
+    }
+
+    .gitkeep
+
+    backend/
+
+.gitkeep
+
+frontend/
+
+.gitkeep
+
+datasets/
+
+.gitkeep
+
+models/
+
+.gitkeep
+
+tests/
+
+.gitkeep
+
+# GeoEstate Nexus Architecture
+
+Documentation for the complete system architecture.
+
+This document explains:
+
+- Backend Architecture
+- Frontend Architecture
+- ML Pipeline
+- API Layer
+- Database Layer
+- Deployment Architecture
+
+- # REST API Documentation
+
+Upcoming Endpoints
+
+GET /
+
+POST /predict
+
+POST /investment-score
+
+GET /market-trends
+
+POST /recommend
+
+GET /health
+
+# Machine Learning Models
+
+This directory contains all trained regression models.
+
+Planned Models
+
+- Linear Regression
+
+- Decision Tree
+
+- Random Forest
+
+- XGBoost
+
+Future Models
+
+- CatBoost
+
+- LightGBM
+
+- # Unit Tests
+
+This directory contains:
+
+- API Tests
+
+- Model Tests
+
+- Integration Tests
+
+- Database Tests
+
+- import os
+
+DATABASE_URL = os.getenv(
+    "DATABASE_URL",
+    "postgresql://postgres:password@localhost:5432/geoestate"
+)
+
+GOOGLE_MAPS_API_KEY = os.getenv(
+    "GOOGLE_MAPS_API_KEY",
+    ""
+)
+
+VERSION
+
+1.0.0
+
+# Changelog
+
+## v1.0.0
+
+Initial project structure
+
+Repository setup
+
+Backend initialization
+
+Documentation
+
+Docker support
+
+REST API planning
+# Code of Conduct
+
+This project follows respectful and collaborative open-source development practices.
+
+Contributors are expected to maintain professionalism and constructive communication.
+# Contributing
+
+1. Fork the repository.
+
+2. Create a feature branch.
+
+3. Commit changes.
+
+4. Open a Pull Request.
+
+5. Ensure all tests pass before submission.
+
+
